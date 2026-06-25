@@ -2,7 +2,10 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"
+    />
     <title>Rangkuman IPO IDX – getsuzo-idx</title>
     <link
       rel="stylesheet"
@@ -17,17 +20,18 @@
       body {
         background: #0a0a0a;
         font-family: "Segoe UI", system-ui, sans-serif;
-        padding: 30px 15px;
+        padding: 12px 8px;
         display: flex;
         justify-content: center;
         color: #e5e7eb;
+        min-height: 100vh;
       }
       .container {
-        max-width: 1300px;
+        max-width: 1000px;
         width: 100%;
         background: #121212;
-        border-radius: 40px;
-        padding: 35px 30px 25px;
+        border-radius: 28px;
+        padding: 18px 14px 20px;
         box-shadow:
           0 20px 60px rgba(0, 0, 0, 0.9),
           0 0 0 1px #2a2a2a;
@@ -38,86 +42,88 @@
         align-items: center;
         justify-content: space-between;
         border-bottom: 2px solid #2a2a2a;
-        padding-bottom: 20px;
-        margin-bottom: 28px;
+        padding-bottom: 14px;
+        margin-bottom: 20px;
+        gap: 8px;
       }
       .header-left {
         display: flex;
         align-items: center;
-        gap: 14px;
+        gap: 10px;
       }
       .header-left i {
-        font-size: 28px;
+        font-size: 20px;
         color: #f0f0f0;
         background: #1e1e1e;
-        padding: 10px;
-        border-radius: 16px;
+        padding: 8px;
+        border-radius: 14px;
         border: 1px solid #3a3a3a;
       }
       .header-left a {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 600;
         color: #f5f5f5;
         text-decoration: none;
-        letter-spacing: -0.3px;
-        transition: 0.2s;
+        letter-spacing: -0.2px;
       }
       .header-left a:hover {
         color: #fff;
-        text-shadow: 0 0 16px rgba(255, 255, 255, 0.08);
+        text-shadow: 0 0 12px rgba(255, 255, 255, 0.08);
       }
       .header-right {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 8px;
         background: #1a1a1a;
-        padding: 6px 18px 6px 14px;
-        border-radius: 60px;
+        padding: 4px 12px 4px 10px;
+        border-radius: 40px;
         border: 1px solid #333;
+        flex-wrap: wrap;
       }
       .header-right i {
         color: #aaa;
-        font-size: 14px;
+        font-size: 12px;
       }
       .header-right span {
-        font-size: 14px;
+        font-size: 12px;
         color: #aaa;
       }
 
       h1 {
-        font-size: 30px;
+        font-size: 22px;
         font-weight: 300;
-        letter-spacing: -0.5px;
-        margin-bottom: 6px;
-        border-left: 5px solid #888;
-        padding-left: 20px;
+        letter-spacing: -0.3px;
+        margin-bottom: 4px;
+        border-left: 4px solid #888;
+        padding-left: 14px;
         color: #f0f0f0;
       }
       h1 i {
         color: #aaa;
-        margin-right: 12px;
+        margin-right: 8px;
+        font-size: 20px;
       }
       .subhead {
-        margin-left: 28px;
-        font-size: 15px;
+        margin-left: 20px;
+        font-size: 13px;
         color: #888;
-        margin-bottom: 28px;
+        margin-bottom: 18px;
         border-bottom: 1px dashed #2a2a2a;
-        padding-bottom: 16px;
+        padding-bottom: 12px;
       }
       .subhead i {
-        margin-right: 6px;
+        margin-right: 4px;
         color: #999;
       }
 
       .exec-summary {
         background: #181818;
-        border-left: 6px solid #aaa;
-        padding: 22px 26px;
-        border-radius: 20px;
-        margin-bottom: 35px;
-        font-size: 15px;
-        line-height: 1.8;
+        border-left: 5px solid #aaa;
+        padding: 16px 18px;
+        border-radius: 16px;
+        margin-bottom: 25px;
+        font-size: 14px;
+        line-height: 1.7;
         color: #d0d0d0;
         border: 1px solid #2a2a2a;
       }
@@ -126,43 +132,44 @@
       }
       .exec-summary i {
         color: #aaa;
-        margin-right: 6px;
+        margin-right: 4px;
       }
 
       .table-wrap {
         overflow-x: auto;
-        margin: 25px 0 20px;
-        border-radius: 24px;
+        margin: 18px 0 14px;
+        border-radius: 18px;
         border: 1px solid #262626;
         background: #0f0f0f;
+        -webkit-overflow-scrolling: touch;
       }
       table {
         width: 100%;
         border-collapse: collapse;
-        font-size: 13.5px;
-        min-width: 900px;
+        font-size: 11px;
+        min-width: 600px;
       }
       th {
         background: #1a1a1a;
         color: #ccc;
         font-weight: 500;
         text-transform: uppercase;
-        letter-spacing: 0.8px;
-        padding: 14px 10px;
+        letter-spacing: 0.6px;
+        padding: 10px 6px;
         text-align: left;
         border-bottom: 2px solid #333;
-        font-size: 12px;
+        font-size: 10px;
       }
       th i {
-        margin-right: 6px;
+        margin-right: 4px;
         color: #888;
       }
       td {
-        padding: 14px 10px;
+        padding: 10px 6px;
         border-bottom: 1px solid #222;
         vertical-align: middle;
         color: #d0d0d0;
-        line-height: 1.5;
+        line-height: 1.4;
       }
       tr:last-child td {
         border-bottom: none;
@@ -171,72 +178,67 @@
         background: #181818;
       }
       .logo-cell {
-        width: 52px;
+        width: 36px;
         text-align: center;
       }
       .logo-cell img {
-        width: 36px;
-        height: 36px;
+        width: 28px;
+        height: 28px;
         border-radius: 50%;
         background: #1a1a1a;
         object-fit: contain;
         border: 1px solid #3a3a3a;
         padding: 2px;
-        transition: 0.2s;
-      }
-      tr:hover .logo-cell img {
-        border-color: #777;
       }
       .code {
         font-weight: 700;
         color: #fff;
-        font-size: 16px;
-        letter-spacing: 0.3px;
+        font-size: 13px;
+        letter-spacing: 0.2px;
       }
       .code i {
         color: #888;
-        font-size: 13px;
-        margin-left: 4px;
+        font-size: 11px;
+        margin-left: 2px;
       }
       .company-name {
         color: #aaa;
-        font-size: 13px;
+        font-size: 11px;
         display: block;
-        margin-top: 2px;
+        margin-top: 1px;
       }
       .badge-score {
         background: #1a1a1a;
         border: 1px solid #444;
-        padding: 3px 14px;
-        border-radius: 60px;
+        padding: 2px 10px;
+        border-radius: 40px;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 13px;
         color: #fff;
         display: inline-block;
         white-space: nowrap;
       }
       .badge-score i {
-        margin-right: 4px;
+        margin-right: 3px;
         color: #f5c542;
       }
       .link-btn {
         display: inline-flex;
         align-items: center;
-        gap: 6px;
+        gap: 4px;
         background: #1a1a1a;
         color: #e0e0e0;
-        padding: 5px 14px 5px 12px;
-        border-radius: 60px;
-        font-size: 13px;
+        padding: 3px 10px 3px 8px;
+        border-radius: 40px;
+        font-size: 11px;
         font-weight: 500;
         text-decoration: none;
         border: 1px solid #3a3a3a;
-        transition: 0.25s;
+        transition: 0.2s;
       }
       .link-btn i {
-        font-size: 13px;
+        font-size: 11px;
         color: #aaa;
-        transition: 0.2s;
       }
       .link-btn:hover {
         background: #2a2a2a;
@@ -245,53 +247,53 @@
       }
       .link-btn:hover i {
         color: #fff;
-        transform: translateX(3px);
+        transform: translateX(2px);
       }
       .detail-text {
-        font-size: 13px;
+        font-size: 11px;
         color: #c0c0c0;
-        max-width: 260px;
+        max-width: 180px;
       }
       .detail-text i {
         color: #666;
-        width: 18px;
-        margin-right: 4px;
+        width: 14px;
+        margin-right: 2px;
       }
       .detail-text strong {
         color: #eee;
       }
 
+      /* DIAGRAM */
       .diagram-section {
-        margin: 40px 0 20px;
+        margin: 30px 0 16px;
         background: #111;
-        border-radius: 28px;
-        padding: 30px 25px;
+        border-radius: 20px;
+        padding: 18px 14px;
         border: 1px solid #262626;
       }
       .diagram-section h2 {
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 400;
         color: #f0f0f0;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
       }
       .diagram-section h2 i {
-        margin-right: 12px;
+        margin-right: 8px;
         color: #aaa;
       }
       .diagram-grid {
         display: flex;
         flex-direction: column;
-        gap: 18px;
+        gap: 12px;
       }
       .diagram-row {
         display: flex;
         align-items: stretch;
-        gap: 16px;
+        gap: 10px;
         background: #161616;
-        border-radius: 20px;
-        padding: 16px 20px;
+        border-radius: 16px;
+        padding: 12px 14px;
         border: 1px solid #282828;
-        transition: 0.2s;
         flex-wrap: wrap;
       }
       .diagram-row:hover {
@@ -301,68 +303,64 @@
       .underwriter-box {
         display: flex;
         align-items: center;
-        gap: 14px;
-        min-width: 220px;
-        flex: 1 1 220px;
+        gap: 10px;
+        min-width: 140px;
+        flex: 1 1 140px;
       }
       .underwriter-box .uw-badge {
         background: #2a2a2a;
         border: 1px solid #555;
         color: #fff;
         font-weight: 700;
-        font-size: 13px;
-        padding: 4px 14px;
-        border-radius: 60px;
+        font-size: 11px;
+        padding: 3px 10px;
+        border-radius: 40px;
         white-space: nowrap;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.3px;
       }
       .underwriter-box .uw-badge i {
-        margin-right: 4px;
+        margin-right: 3px;
         color: #f5c542;
-        font-size: 12px;
+        font-size: 11px;
       }
       .underwriter-box .uw-name {
         font-weight: 600;
         color: #eee;
-        font-size: 15px;
+        font-size: 13px;
       }
       .underwriter-box .uw-name small {
         font-weight: 400;
         color: #888;
-        font-size: 13px;
+        font-size: 11px;
+        display: inline-block;
       }
       .arrow-icon {
         display: flex;
         align-items: center;
         color: #555;
-        font-size: 22px;
-        padding: 0 8px;
+        font-size: 18px;
+        padding: 0 4px;
         flex-shrink: 0;
       }
       .ipo-list {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: 12px 20px;
-        flex: 3 1 400px;
+        gap: 8px 12px;
+        flex: 3 1 200px;
       }
       .ipo-item {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 5px;
         background: #1e1e1e;
-        padding: 4px 14px 4px 8px;
-        border-radius: 60px;
+        padding: 3px 10px 3px 6px;
+        border-radius: 40px;
         border: 1px solid #333;
-        transition: 0.2s;
-      }
-      .ipo-item:hover {
-        border-color: #777;
-        background: #282828;
       }
       .ipo-item img {
-        width: 28px;
-        height: 28px;
+        width: 22px;
+        height: 22px;
         border-radius: 50%;
         background: #111;
         object-fit: contain;
@@ -372,16 +370,17 @@
       .ipo-item .stock-code {
         font-weight: 700;
         color: #fff;
-        font-size: 14px;
+        font-size: 12px;
       }
       .ipo-item .gain {
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 600;
         color: #4caf50;
         background: #1a2a1a;
-        padding: 1px 10px;
+        padding: 1px 8px;
         border-radius: 30px;
         border: 1px solid #2a4a2a;
+        white-space: nowrap;
       }
       .ipo-item .gain.orange {
         color: #f5a623;
@@ -394,107 +393,258 @@
         background: #2a2a1a;
       }
 
-      /* ===== PERBAIKAN DI SINI: Track Record dengan Font Awesome ===== */
       .track-record-note {
-        margin-top: 12px;
-        font-size: 12px;
+        margin-top: 10px;
+        font-size: 11px;
         color: #666;
-        padding: 10px 16px;
+        padding: 8px 12px;
         background: #0a0a0a;
-        border-radius: 12px;
+        border-radius: 10px;
         border: 1px solid #222;
-        line-height: 1.8;
+        line-height: 1.7;
       }
       .track-record-note strong {
         color: #aaa;
       }
       .track-record-note .tr-icon {
-        width: 22px;
+        width: 18px;
         display: inline-block;
         text-align: center;
-        margin-right: 4px;
+        margin-right: 3px;
       }
 
       .score-note {
-        font-size: 13px;
+        font-size: 12px;
         color: #888;
         text-align: center;
-        margin-top: 10px;
-        padding: 10px;
+        margin-top: 8px;
+        padding: 8px 10px;
         background: #161616;
         border-radius: 12px;
         border: 1px solid #2a2a2a;
       }
       .score-note i {
-        margin-right: 6px;
+        margin-right: 4px;
         color: #aaa;
       }
 
-      @media (max-width: 700px) {
+      /* MOBILE FIRST - Semua di atas sudah mobile-friendly, tambahan sentuhan */
+      @media (max-width: 600px) {
         .container {
-          padding: 15px 10px;
+          padding: 12px 8px;
+          border-radius: 20px;
         }
         .header-left a {
-          font-size: 18px;
+          font-size: 15px;
+        }
+        .header-left i {
+          font-size: 16px;
+          padding: 6px;
         }
         .header-right span {
-          font-size: 11px;
+          font-size: 10px;
+        }
+        .header-right {
+          padding: 3px 8px;
+          gap: 4px;
         }
         h1 {
-          font-size: 22px;
-          padding-left: 12px;
+          font-size: 18px;
+          padding-left: 10px;
+        }
+        h1 i {
+          font-size: 16px;
+          margin-right: 6px;
+        }
+        .subhead {
+          font-size: 11px;
+          margin-left: 14px;
+          padding-bottom: 8px;
         }
         .exec-summary {
-          padding: 16px 18px;
-          font-size: 14px;
+          font-size: 12px;
+          padding: 12px 14px;
         }
         table {
-          font-size: 11.5px;
-          min-width: 700px;
+          font-size: 10px;
+          min-width: 500px;
         }
-        td,
         th {
-          padding: 8px 5px;
+          font-size: 9px;
+          padding: 6px 4px;
         }
-        .detail-text {
-          max-width: 150px;
-          font-size: 11.5px;
+        td {
+          padding: 6px 4px;
         }
-        .link-btn {
-          font-size: 11px;
-          padding: 3px 10px;
-        }
-        .badge-score {
-          font-size: 13px;
-          padding: 2px 10px;
+        .logo-cell {
+          width: 28px;
         }
         .logo-cell img {
-          width: 30px;
-          height: 30px;
+          width: 22px;
+          height: 22px;
+        }
+        .code {
+          font-size: 11px;
+        }
+        .company-name {
+          font-size: 9px;
+        }
+        .badge-score {
+          font-size: 11px;
+          padding: 1px 8px;
+        }
+        .link-btn {
+          font-size: 10px;
+          padding: 2px 8px;
+        }
+        .link-btn i {
+          font-size: 10px;
+        }
+        .detail-text {
+          font-size: 10px;
+          max-width: 120px;
+        }
+        .detail-text i {
+          width: 12px;
+        }
+        .diagram-section {
+          padding: 12px 8px;
+        }
+        .diagram-section h2 {
+          font-size: 15px;
+        }
+        .diagram-row {
+          padding: 8px 10px;
+          gap: 6px;
+        }
+        .underwriter-box {
+          min-width: 100px;
+          gap: 6px;
+          flex: 1 1 100px;
+        }
+        .underwriter-box .uw-badge {
+          font-size: 9px;
+          padding: 2px 8px;
+        }
+        .underwriter-box .uw-name {
+          font-size: 11px;
+        }
+        .underwriter-box .uw-name small {
+          font-size: 9px;
+        }
+        .arrow-icon {
+          font-size: 14px;
+          padding: 0 2px;
+        }
+        .ipo-list {
+          gap: 4px 8px;
+          flex: 1 1 120px;
+        }
+        .ipo-item {
+          padding: 2px 6px 2px 4px;
+          gap: 3px;
+        }
+        .ipo-item img {
+          width: 18px;
+          height: 18px;
+        }
+        .ipo-item .stock-code {
+          font-size: 10px;
+        }
+        .ipo-item .gain {
+          font-size: 8px;
+          padding: 0 6px;
+        }
+        .track-record-note {
+          font-size: 10px;
+          padding: 6px 10px;
+        }
+        .track-record-note .tr-icon {
+          width: 14px;
+        }
+        .score-note {
+          font-size: 10px;
+          padding: 6px 8px;
+        }
+        .footer {
+          font-size: 10px;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .container {
+          padding: 8px 4px;
+        }
+        .header-left a {
+          font-size: 13px;
+        }
+        .header-left i {
+          font-size: 14px;
+          padding: 4px;
+        }
+        .header-right span {
+          font-size: 9px;
+        }
+        h1 {
+          font-size: 16px;
+          padding-left: 8px;
+        }
+        h1 i {
+          font-size: 14px;
+        }
+        .subhead {
+          font-size: 10px;
+          margin-left: 10px;
+        }
+        .exec-summary {
+          font-size: 11px;
+          padding: 10px 12px;
+        }
+        table {
+          font-size: 9px;
+          min-width: 400px;
+        }
+        th {
+          font-size: 8px;
+          padding: 4px 3px;
+        }
+        td {
+          padding: 4px 3px;
+        }
+        .code {
+          font-size: 10px;
+        }
+        .badge-score {
+          font-size: 10px;
+          padding: 1px 6px;
+        }
+        .link-btn {
+          font-size: 9px;
+          padding: 2px 6px;
+        }
+        .detail-text {
+          font-size: 9px;
+          max-width: 90px;
         }
         .diagram-row {
           flex-direction: column;
           align-items: stretch;
-          padding: 14px;
         }
         .arrow-icon {
           transform: rotate(90deg);
-          padding: 4px 0;
           align-self: center;
+          padding: 2px 0;
         }
         .underwriter-box {
           flex-wrap: wrap;
         }
-        .ipo-list {
-          gap: 8px;
-        }
       }
 
       .footer {
-        margin-top: 30px;
-        padding-top: 20px;
+        margin-top: 20px;
+        padding-top: 14px;
         border-top: 1px solid #222;
-        font-size: 13px;
+        font-size: 11px;
         color: #555;
         text-align: center;
       }
@@ -507,7 +657,7 @@
         text-decoration: underline;
       }
       .footer i {
-        margin: 0 4px;
+        margin: 0 3px;
       }
     </style>
   </head>
@@ -518,25 +668,22 @@
         <div class="header-left">
           <i class="fas fa-chart-line"></i>
           <a href="https://getsuzo-idx.onrender.com/" target="_blank"
-            >Getsuzo IDX</a
+            >getsuzo-idx</a
           >
         </div>
         <div class="header-right">
-          <i class="fas fa-calendar-alt"></i><span>25 Juni 2026</span>
+          <i class="fas fa-calendar-alt"></i><span>25 Jun 2026</span>
           <i
             class="fas fa-circle"
-            style="font-size: 6px; color: #555; margin: 0 6px"
+            style="font-size: 4px; color: #555; margin: 0 4px"
           ></i>
-          <i class="fas fa-bolt" style="color: #f5c542"></i
-          ><span style="color: #bbb">IPO Hunter</span>
+          <i class="fas fa-bolt" style="color: #f5c542; font-size: 11px"></i
+          ><span style="color: #bbb">IPO</span>
         </div>
       </div>
 
       <!-- JUDUL -->
-      <h1>
-        <i class="fas fa-rocket"></i> Analisis IPO IDX · Oversubscribe, Hype &
-        Underwriter
-      </h1>
+      <h1><i class="fas fa-rocket"></i> Analisis IPO IDX</h1>
       <div class="subhead">
         <i class="fas fa-arrow-right"></i> Peringkat:
         <strong style="color: #fff">PRDL</strong> >
@@ -545,48 +692,46 @@
         <strong style="color: #fff">RANS</strong> >
         <strong style="color: #fff">JECX</strong> >
         <strong style="color: #fff">BACH</strong> &nbsp;|&nbsp;
-        <i class="fas fa-star" style="color: #f5c542"></i> Skor: 40%
-        oversubscribe · 30% hype · 30% underwriter
+        <i class="fas fa-star" style="color: #f5c542"></i> Skor: 40% oversub ·
+        30% hype · 30% underwriter
       </div>
 
       <!-- EXECUTIVE SUMMARY -->
       <div class="exec-summary">
         <i
           class="fas fa-flag-checkered"
-          style="font-size: 18px; float: left; margin-right: 12px; color: #aaa"
+          style="font-size: 16px; float: left; margin-right: 10px; color: #aaa"
         ></i>
-        <strong>Executive Summary:</strong> Calon IPO Juni–Juli 2026 didominasi
-        sektor kesehatan (PRDL, EMMI, JECX) dan consumer (JELI, RANS, BACH).
-        PRDL dan JELI paling hype, didukung
-        <strong>Sucor Sekuritas</strong> (track record SUPA >318× & RATU +556%).
-        EMMI (BRI Danareksa/INA) juga kuat. RANS viral berkat Raffi Ahmad, namun
-        Trimegah tidak spesialis ARA besar. JECX dan BACH lebih moderat. <br />
+        <strong>Executive Summary:</strong> IPO Juni–Juli 2026 didominasi
+        kesehatan (PRDL, EMMI, JECX) dan consumer (JELI, RANS, BACH). PRDL dan
+        JELI paling hype, didukung <strong>Sucor</strong> (SUPA >318× & RATU
+        +556%). EMMI (BRI Danareksa/INA) juga kuat. RANS viral via Raffi Ahmad.
+        <br />
         <i
           class="fas fa-bullseye"
-          style="margin-top: 6px; display: inline-block"
+          style="margin-top: 4px; display: inline-block"
         ></i>
-        <strong>Rekomendasi:</strong> Fokus ke
-        <strong>PRDL, JELI, EMMI</strong> – kombinasi hype + underwriter mapan.
-        Tetap waspadai valuasi.
+        <strong>Rekomendasi:</strong> Fokus <strong>PRDL, JELI, EMMI</strong> –
+        hype + underwriter mapan.
       </div>
 
-      <!-- TABEL RANGKUMAN LENGKAP (dengan Total Score sesuai dokumen) -->
+      <!-- TABEL RANGKUMAN -->
       <div class="table-wrap">
         <table>
           <thead>
             <tr>
-              <th style="width: 46px"><i class="fas fa-image"></i></th>
-              <th style="min-width: 90px"><i class="fas fa-code"></i> Kode</th>
-              <th style="min-width: 160px">
+              <th style="width: 30px"><i class="fas fa-image"></i></th>
+              <th style="min-width: 60px"><i class="fas fa-code"></i> Kode</th>
+              <th style="min-width: 100px">
                 <i class="fas fa-building"></i> Emiten
               </th>
-              <th><i class="fas fa-fire"></i> Oversubscribe & Hype</th>
+              <th><i class="fas fa-fire"></i> Oversub & Hype</th>
               <th><i class="fas fa-handshake"></i> Underwriter</th>
               <th><i class="fas fa-triangle-exclamation"></i> Risiko</th>
-              <th style="text-align: center; width: 80px">
-                <i class="fas fa-star"></i> Total Score
+              <th style="text-align: center; width: 55px">
+                <i class="fas fa-star"></i> Score
               </th>
-              <th style="text-align: center; width: 110px">
+              <th style="text-align: center; width: 70px">
                 <i class="fas fa-arrow-right"></i> Analisis
               </th>
             </tr>
@@ -606,20 +751,18 @@
                   >PRDL <i class="fas fa-crown" style="color: #f5c542"></i
                 ></span>
               </td>
-              <td><span class="company-name">Prodia Diagnostic Line</span></td>
+              <td><span class="company-name">Prodia Diagnostic</span></td>
               <td class="detail-text">
                 <i class="fas fa-arrow-up" style="color: #4caf50"></i>
-                <strong>Sangat Tinggi</strong> – IPO kecil (522,9 jt lembar),
-                banyak dibahas forum, diprediksi oversubscribe.
+                <strong>Sangat Tinggi</strong> – IPO 522,9 jt, banyak dibahas.
               </td>
               <td class="detail-text">
-                <i class="fas fa-briefcase"></i>
-                <strong>Sucor Sekuritas</strong> (Az) – SUPA +78%, RATU +556%,
-                RAAM +225%.
+                <i class="fas fa-briefcase"></i> <strong>Sucor</strong> (Az) –
+                SUPA +78%, RATU +556%.
               </td>
               <td class="detail-text">
                 <i class="fas fa-exclamation-circle" style="color: #f5a623"></i>
-                Valuasi premium, fluktuasi belanja kesehatan.
+                Valuasi premium.
               </td>
               <td style="text-align: center">
                 <span class="badge-score"
@@ -652,17 +795,16 @@
               <td><span class="company-name">Niramas Utama (INACO)</span></td>
               <td class="detail-text">
                 <i class="fas fa-arrow-up" style="color: #4caf50"></i>
-                <strong>Sangat Tinggi</strong> – brand INACO kuat, bookbuilding
-                15–22 Juni, disebut "menarik perhatian".
+                <strong>Sangat Tinggi</strong> – brand INACO, bookbuilding 15–22
+                Jun.
               </td>
               <td class="detail-text">
-                <i class="fas fa-briefcase"></i>
-                <strong>Sucor Sekuritas</strong> (Az) – sole, reputasi cetak ARA
-                & multibagger.
+                <i class="fas fa-briefcase"></i> <strong>Sucor</strong> (Az) –
+                sole, reputasi multibagger.
               </td>
               <td class="detail-text">
                 <i class="fas fa-exclamation-circle" style="color: #f5a623"></i>
-                Bisnis F&B sensitif harga gula, margin stabil.
+                Sensitif harga gula.
               </td>
               <td style="text-align: center">
                 <span class="badge-score"
@@ -691,17 +833,16 @@
               <td><span class="company-name">Esa Medika Mandiri</span></td>
               <td class="detail-text">
                 <i class="fas fa-arrow-up" style="color: #4caf50"></i>
-                <strong>Tinggi</strong> – distributor alat kesehatan, PER ~26×,
-                diskusi komunitas positif.
+                <strong>Tinggi</strong> – distributor alat kesehatan, PER ~26×.
               </td>
               <td class="detail-text">
                 <i class="fas fa-briefcase"></i>
-                <strong>BRI Danareksa</strong> &
-                <strong>INA Sekuritas</strong> (Nikko) – mapan, institutional.
+                <strong>BRI Danareksa</strong> & <strong>INA</strong> (Nikko) –
+                mapan.
               </td>
               <td class="detail-text">
                 <i class="fas fa-exclamation-circle" style="color: #f5a623"></i>
-                PER premium, CAPEX & R&D tinggi.
+                PER premium, CAPEX tinggi.
               </td>
               <td style="text-align: center">
                 <span class="badge-score"
@@ -734,18 +875,15 @@
               <td><span class="company-name">Rans Entertainmen</span></td>
               <td class="detail-text">
                 <i class="fas fa-arrow-up" style="color: #4caf50"></i>
-                <strong>Tinggi</strong> – viral Raffi Ahmad, harga Rp135–170,
-                listing 7 Juli.
+                <strong>Tinggi</strong> – viral Raffi Ahmad, listing 7 Juli.
               </td>
               <td class="detail-text">
-                <i class="fas fa-briefcase"></i>
-                <strong>Trimegah Sekuritas</strong> (LG) – pengalaman mid-tier,
-                bukan spesialis ARA besar.
+                <i class="fas fa-briefcase"></i> <strong>Trimegah</strong> (LG)
+                – mid-tier, bukan spesialis ARA.
               </td>
               <td class="detail-text">
                 <i class="fas fa-exclamation-circle" style="color: #f5a623"></i>
-                Ketergantungan pada figur publik, eksekusi jangka panjang belum
-                teruji.
+                Tergantung figur publik.
               </td>
               <td style="text-align: center">
                 <span class="badge-score"
@@ -771,21 +909,18 @@
                 />
               </td>
               <td><span class="code">JECX</span></td>
-              <td>
-                <span class="company-name">Nitrasanata Dharma (JEC)</span>
-              </td>
+              <td><span class="company-name">Nitrasanata Dharma</span></td>
               <td class="detail-text">
                 <i class="fas fa-minus" style="color: #f5a623"></i>
-                <strong>Menengah</strong> – rumah sakit mata, IPO 15%, diskusi
-                moderate.
+                <strong>Menengah</strong> – RS mata, IPO 15%, diskusi moderate.
               </td>
               <td class="detail-text">
-                <i class="fas fa-briefcase"></i>
-                <strong>Trimegah Sekuritas</strong> (LG) – rekam jejak moderat.
+                <i class="fas fa-briefcase"></i> <strong>Trimegah</strong> (LG)
+                – rekam jejak moderat.
               </td>
               <td class="detail-text">
                 <i class="fas fa-exclamation-circle" style="color: #f5a623"></i>
-                Kompetisi layanan kesehatan, CAPEX RS.
+                Kompetisi layanan kesehatan.
               </td>
               <td style="text-align: center">
                 <span class="badge-score"
@@ -814,13 +949,11 @@
               <td><span class="company-name">Bach Multi Global</span></td>
               <td class="detail-text">
                 <i class="fas fa-arrow-down" style="color: #f44336"></i>
-                <strong>Rendah</strong> – fokus genset & infra telko, kurang
-                dibahas.
+                <strong>Rendah</strong> – genset & infra telko, kurang dibahas.
               </td>
               <td class="detail-text">
                 <i class="fas fa-briefcase"></i>
-                <strong>Erdikha Elit Sekuritas</strong> (AO) – relatif baru,
-                afiliasi Djarum.
+                <strong>Erdikha Elit</strong> (AO) – baru, afiliasi Djarum.
               </td>
               <td class="detail-text">
                 <i class="fas fa-exclamation-circle" style="color: #f5a623"></i>
@@ -846,30 +979,26 @@
 
       <!-- Catatan skor -->
       <div class="score-note">
-        <i class="fas fa-calculator"></i> Skor dihitung berdasarkan indikator
-        <strong>oversubscribe (40%)</strong>, <strong>hype (30%)</strong>, dan
-        <strong>reputasi underwriter (30%)</strong>. Total Score di atas adalah
-        bobot yang dipakai dalam rekomendasi peringkat.
+        <i class="fas fa-calculator"></i> Skor = 40% oversubscribe + 30% hype +
+        30% reputasi underwriter.
       </div>
 
-      <!-- ========================================================= -->
-      <!-- DIAGRAM HUBUNGAN UNDERWRITER → IPO (dengan Historical Track Record) -->
-      <!-- ========================================================= -->
+      <!-- DIAGRAM HUBUNGAN UNDERWRITER → IPO -->
       <div class="diagram-section">
         <h2>
-          <i class="fas fa-project-diagram"></i> Hubungan Underwriter → IPO yang
+          <i class="fas fa-project-diagram"></i> Underwriter → IPO yang
           Ditangani
         </h2>
 
         <div class="diagram-grid">
-          <!-- ROW 1: Sucor Sekuritas -->
+          <!-- Sucor -->
           <div class="diagram-row">
             <div class="underwriter-box">
               <span class="uw-badge"
                 ><i class="fas fa-bolt"></i> Az (Lead)</span
               >
               <span class="uw-name"
-                >PT Sucor Sekuritas <small>· track record terbaik</small></span
+                >PT Sucor <small>track record terbaik</small></span
               >
             </div>
             <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
@@ -882,8 +1011,8 @@
                   onerror="this.style.display = 'none'"
                 />
                 <span class="stock-code">SUPA</span>
-                <span class="gain">+78% 1bln</span>
-                <span style="font-size: 10px; color: #666">oversub 318×</span>
+                <span class="gain">+78%</span>
+                <span style="font-size: 8px; color: #666">318×</span>
               </div>
               <div class="ipo-item">
                 <img
@@ -893,8 +1022,8 @@
                   onerror="this.style.display = 'none'"
                 />
                 <span class="stock-code">RATU</span>
-                <span class="gain gold">+556% 1bln</span>
-                <span style="font-size: 10px; color: #666">oversub 313×</span>
+                <span class="gain gold">+556%</span>
+                <span style="font-size: 8px; color: #666">313×</span>
               </div>
               <div class="ipo-item">
                 <img
@@ -904,20 +1033,19 @@
                   onerror="this.style.display = 'none'"
                 />
                 <span class="stock-code">RAAM</span>
-                <span class="gain orange">+225% 1bln</span>
+                <span class="gain orange">+225%</span>
               </div>
             </div>
           </div>
 
-          <!-- ROW 2: BRI Danareksa & INA -->
+          <!-- BRI Danareksa & INA -->
           <div class="diagram-row">
             <div class="underwriter-box">
               <span class="uw-badge"
                 ><i class="fas fa-university"></i> Co-Lead</span
               >
               <span class="uw-name"
-                >BRI Danareksa <small>&</small> INA Sekuritas
-                <small>(Nikko)</small></span
+                >BRI Danareksa <small>& INA (Nikko)</small></span
               >
             </div>
             <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
@@ -925,13 +1053,12 @@
               <div class="ipo-item">
                 <img
                   src="https://assets.stockbit.com/logos/companies/DAYA.png"
-                  alt="Mitratel"
+                  alt="DAYA"
                   loading="lazy"
                   onerror="this.style.display = 'none'"
                 />
                 <span class="stock-code">DAYA</span>
                 <span class="gain gold">Rp18,8 T</span>
-                <span style="font-size: 10px; color: #666">IPO terbesar</span>
               </div>
               <div class="ipo-item">
                 <img
@@ -944,7 +1071,7 @@
                 <span
                   class="gain"
                   style="color: #aaa; border-color: #444; background: #222"
-                  >United Bike</span
+                  >United</span
                 >
               </div>
               <div class="ipo-item">
@@ -958,20 +1085,20 @@
                 <span
                   class="gain"
                   style="color: #aaa; border-color: #444; background: #222"
-                  >Agrokimia</span
+                  >Agro</span
                 >
               </div>
             </div>
           </div>
 
-          <!-- ROW 3: Trimegah Sekuritas -->
+          <!-- Trimegah -->
           <div class="diagram-row">
             <div class="underwriter-box">
               <span class="uw-badge"
                 ><i class="fas fa-briefcase"></i> LG (Lead)</span
               >
               <span class="uw-name"
-                >PT Trimegah Sekuritas <small>· mid-tier aktif</small></span
+                >PT Trimegah <small>mid-tier aktif</small></span
               >
             </div>
             <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
@@ -984,8 +1111,8 @@
                   onerror="this.style.display = 'none'"
                 />
                 <span class="stock-code">AADI</span>
-                <span class="gain">+19,8% ARA</span>
-                <span style="font-size: 10px; color: #666">Rp4,32 T</span>
+                <span class="gain">+19,8%</span>
+                <span style="font-size: 8px; color: #666">ARA</span>
               </div>
               <div class="ipo-item">
                 <img
@@ -998,7 +1125,7 @@
                 <span
                   class="gain"
                   style="color: #aaa; border-color: #444; background: #222"
-                  >Bangun Kosambi</span
+                  >Kosambi</span
                 >
               </div>
               <div class="ipo-item">
@@ -1026,21 +1153,20 @@
                 <span
                   class="gain"
                   style="color: #aaa; border-color: #444; background: #222"
-                  >Entertainmen</span
+                  >Entertain</span
                 >
               </div>
             </div>
           </div>
 
-          <!-- ROW 4: Erdikha Elit -->
+          <!-- Erdikha Elit -->
           <div class="diagram-row">
             <div class="underwriter-box">
               <span class="uw-badge"
                 ><i class="fas fa-shield-alt"></i> AO (Lead)</span
               >
               <span class="uw-name"
-                >PT Erdikha Elit Sekuritas
-                <small>· afiliasi Djarum</small></span
+                >Erdikha Elit <small>afiliasi Djarum</small></span
               >
             </div>
             <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
@@ -1058,7 +1184,7 @@
                   style="color: #aaa; border-color: #444; background: #222"
                   >Rp222 M</span
                 >
-                <span style="font-size: 10px; color: #666">2019</span>
+                <span style="font-size: 8px; color: #666">2019</span>
               </div>
               <div class="ipo-item">
                 <img
@@ -1071,64 +1197,54 @@
                 <span
                   class="gain"
                   style="color: #aaa; border-color: #444; background: #222"
-                  >Bach Multi</span
+                  >Multi</span
                 >
               </div>
             </div>
           </div>
         </div>
 
-        <!-- ========================================================= -->
-        <!-- HISTORICAL TRACK RECORD - UBAH EMOJI JADI FONT AWESOME   -->
-        <!-- ========================================================= -->
+        <!-- Historical Track Record dengan Font Awesome -->
         <div class="track-record-note">
-          <i class="fas fa-history" style="margin-right: 8px; color: #888"></i>
-          <strong>Historical Track Record Underwriter:</strong><br />
+          <i class="fas fa-history" style="margin-right: 6px; color: #888"></i>
+          <strong>Historical Track Record:</strong><br />
           <i class="fas fa-trophy tr-icon" style="color: #f5c542"></i>
-          <strong>Sucor (Az)</strong> – SUPA oversub 318×, RATU oversub 313×,
-          RAAM +225% 1bln.<br />
+          <strong>Sucor (Az)</strong> – SUPA 318×, RATU 313×, RAAM +225%.<br />
           <i class="fas fa-university tr-icon" style="color: #8ab4f8"></i>
-          <strong>BRI Danareksa</strong> – Mitratel (DAYA) IPO Rp18,8 T
-          (terbesar), UNTD (United Bike), DGWG, total 4 IPO 2022 senilai Rp8,8
-          T.<br />
+          <strong>BRI Danareksa</strong> – Mitratel Rp18,8 T, UNTD, DGWG.<br />
           <i class="fas fa-chart-pie tr-icon" style="color: #c084fc"></i>
-          <strong>INA Sekuritas (Nikko)</strong> – Spesialis IPO institusional,
-          pengalaman panjang di pasar modal.<br />
+          <strong>INA (Nikko)</strong> – Spesialis institusional.<br />
           <i class="fas fa-chart-line tr-icon" style="color: #4caf50"></i>
-          <strong>Trimegah (LG)</strong> – AADI +19,8% ARA hari pertama (Rp4,32
-          T), CBDK, paling aktif di 2025.<br />
+          <strong>Trimegah (LG)</strong> – AADI +19,8% ARA, CBDK.<br />
           <i class="fas fa-shield tr-icon" style="color: #f87171"></i>
-          <strong>Erdikha Elit (AO)</strong> – ENVY IPO Rp222 M (2019), track
-          record masih terbatas.
+          <strong>Erdikha Elit (AO)</strong> – ENVY Rp222 M (2019).
         </div>
 
         <p
           style="
-            margin-top: 16px;
-            font-size: 13px;
+            margin-top: 12px;
+            font-size: 11px;
             color: #666;
             text-align: center;
             border-top: 1px solid #222;
-            padding-top: 14px;
+            padding-top: 12px;
           "
         >
-          <i class="fas fa-info-circle"></i> Badge kode underwriter:
+          <i class="fas fa-info-circle"></i> Kode underwriter:
           <strong style="color: #aaa">(Az)</strong>,
           <strong style="color: #aaa">(LG)</strong>,
-          <strong style="color: #aaa">(AO)</strong> adalah kode identitas
-          penjamin emisi.
+          <strong style="color: #aaa">(AO)</strong>
         </p>
       </div>
 
       <!-- FOOTER -->
       <div class="footer">
-        <i class="fas fa-database"></i> Sumber: Prospektus, IDX, Kontan,
-        DealStreetAsia, Kumparan, Ajaib &nbsp;|&nbsp;
-        <i class="fas fa-edit"></i> Diolah oleh
+        <i class="fas fa-database"></i> Sumber: Prospektus, IDX, Kontan, Ajaib
+        &nbsp;|&nbsp; <i class="fas fa-edit"></i>
         <a href="https://getsuzo-idx.onrender.com/" target="_blank"
-          >getsuzo-idx.onrender.com</a
+          >getsuzo-idx</a
         >
-        &nbsp;|&nbsp; <i class="fas fa-calendar-day"></i> 25 Juni 2026
+        &nbsp;|&nbsp; <i class="fas fa-calendar-day"></i> 25 Jun 2026
       </div>
     </div>
   </body>
